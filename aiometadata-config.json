@@ -1,0 +1,4803 @@
+{
+  "version": "0.0.0-testing.20260507.3",
+  "exportedAt": "2026-05-09T22:46:22.469Z",
+  "config": {
+    "language": "pt-BR",
+    "addonName": "",
+    "includeAdult": false,
+    "blurThumbs": false,
+    "showPrefix": false,
+    "showMetaProviderAttribution": false,
+    "castCount": 10,
+    "displayAgeRating": false,
+    "showDisabledCatalogs": true,
+    "sfw": false,
+    "hideUnreleasedDigital": false,
+    "hideUnreleasedDigitalSearch": false,
+    "hideWatchedTrakt": false,
+    "hideWatchedAnilist": false,
+    "hideWatchedMdblist": false,
+    "providers": {
+      "movie": "tmdb",
+      "series": "tvdb",
+      "anime": "kitsu",
+      "anime_id_provider": "imdb",
+      "forceAnimeForDetectedImdb": false
+    },
+    "artProviders": {
+      "movie": {
+        "poster": "tmdb",
+        "background": "tmdb",
+        "logo": "tmdb"
+      },
+      "series": {
+        "poster": "tmdb",
+        "background": "tmdb",
+        "logo": "tmdb"
+      },
+      "anime": {
+        "poster": "meta",
+        "background": "imdb",
+        "logo": "imdb"
+      },
+      "englishArtOnly": false,
+      "originalLangFallback": true
+    },
+    "tvdbSeasonType": "default",
+    "mal": {
+      "skipFiller": false,
+      "skipRecap": false,
+      "allowEpisodeMarking": false,
+      "useImdbIdForCatalogAndSearch": false
+    },
+    "tmdb": {
+      "scrapeImdb": true,
+      "forceLatinCastNames": true
+    },
+    "apiKeys": {
+      "gemini": "",
+      "tmdb": "",
+      "tvdb": "",
+      "fanart": "",
+      "rpdb": "",
+      "topPoster": "",
+      "mdblist": "",
+      "openrouter": "",
+      "traktTokenId": "",
+      "simklTokenId": "",
+      "anilistTokenId": "",
+      "customDescriptionBlurb": ""
+    },
+    "posterRatingProvider": "custom",
+    "usePosterProxy": true,
+    "mdblistWatchTracking": true,
+    "anilistWatchTracking": false,
+    "simklWatchTracking": false,
+    "traktWatchTracking": false,
+    "publicmetadbWatchTracking": false,
+    "enableRatingPostersForLibrary": true,
+    "showRateMeButton": false,
+    "ageRating": "None",
+    "searchEnabled": true,
+    "sessionId": "",
+    "catalogSetupComplete": true,
+    "timezone": "America/Sao_Paulo",
+    "catalogs": [
+      {
+        "id": "mdblist.87667",
+        "type": "movie",
+        "name": "Filmes Populares",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "all",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 235,
+          "url": "https://mdblist.com/lists/snoak/trending-movies",
+          "mediatype": "movie",
+          "author": "snoak",
+          "hideWatchedTrakt": false,
+          "hideWatchedMdblist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.88434",
+        "type": "series",
+        "name": "Séries Populares",
+        "enabled": true,
+        "showInHome": true,
+        "source": "mdblist",
+        "sort": "rank",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "all",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 250,
+          "url": "https://mdblist.com/lists/snoak/trakt-s-trending-shows",
+          "mediatype": "show",
+          "author": "snoak",
+          "hideWatchedTrakt": false,
+          "hideWatchedMdblist": false
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.86934",
+        "type": "movie",
+        "name": "Novos Filmes",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "url": "https://mdblist.com/lists/snoak/latest-movies-digital-release",
+          "mediatype": "movie",
+          "author": "snoak"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.2194",
+        "type": "series",
+        "name": "Novas Séries",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 300,
+          "url": "https://mdblist.com/lists/garycrawfordgc/latest-tv-shows",
+          "mediatype": "show",
+          "author": "garycrawfordgc"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.88803",
+        "type": "movie",
+        "name": "Filmes do Mês",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 15,
+          "url": "https://mdblist.com/lists/antonio0101/top-movies-of-the-week",
+          "mediatype": "movie",
+          "author": "antonio0101"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.88253",
+        "type": "movie",
+        "name": "Filmes IMDb Top 250",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 249,
+          "url": "https://mdblist.com/lists/jtdumproff/top-imdb-250",
+          "mediatype": "movie",
+          "author": "jtdumproff"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.13914",
+        "type": "movie",
+        "name": "Todos Filmes na Netflix",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 5724,
+          "url": "https://mdblist.com/lists/fs-corrupt/netflix-movies",
+          "mediatype": "movie",
+          "author": "fs-corrupt"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.13963",
+        "type": "series",
+        "name": "Todas Séries na Netflix",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 3119,
+          "url": "https://mdblist.com/lists/fs-corrupt/netflix-shows",
+          "mediatype": "show",
+          "author": "fs-corrupt"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "flixpatrol.netflix.world.movie",
+        "type": "movie",
+        "name": "Netflix Top 10 Filmes",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "flixpatrol.netflix.world.series",
+        "type": "series",
+        "name": "Netflix Top 10 Séries",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.3308",
+        "type": "movie",
+        "name": "Todos Filmes na Amazon Prime",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1919,
+          "url": "https://mdblist.com/lists/sig1878/amazon-prime-video-movies",
+          "mediatype": "movie",
+          "author": "sig1878"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.13964",
+        "type": "series",
+        "name": "Todas Séries na Amazon Prime",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1535,
+          "url": "https://mdblist.com/lists/fs-corrupt/amazon-shows",
+          "mediatype": "show",
+          "author": "fs-corrupt"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "flixpatrol.amazon-prime.world.movie",
+        "type": "movie",
+        "name": "Amazon Prime Top 10 Filmes",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "flixpatrol.amazon-prime.world.series",
+        "type": "series",
+        "name": "Amazon Prime Top 10 Séries",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.137619",
+        "type": "movie",
+        "name": "Todos os Filmes na HBO Max",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1148,
+          "url": "https://mdblist.com/lists/seanpharris/hbo-max-movies",
+          "mediatype": "movie",
+          "author": "seanpharris"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.5975",
+        "type": "series",
+        "name": "Todas as Séries na HBO Max",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 509,
+          "url": "https://mdblist.com/lists/rafster/hbo-max-shows",
+          "mediatype": "show",
+          "author": "rafster"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "flixpatrol.hbo-max.world.movie",
+        "type": "movie",
+        "name": "Top 10 Filmes na Max",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "flixpatrol.hbo-max.world.series",
+        "type": "series",
+        "name": "Top 10 Séries na Max",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "flixpatrol.apple-tv.world.movie",
+        "type": "movie",
+        "name": "Top 10 Filmes na Apple TV+",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "flixpatrol.apple-tv.world.series",
+        "type": "series",
+        "name": "Top 10 Séries na Apple TV+",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "flixpatrol.disney.world.movie",
+        "type": "movie",
+        "name": "Top 10 Filmes na Disney+",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "flixpatrol.disney.world.series",
+        "type": "series",
+        "name": "Top 10 Séries na Disney+",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.3022",
+        "type": "movie",
+        "name": "Universo Marvel",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 81,
+          "url": "https://mdblist.com/lists/kingkearney/marvel-universe",
+          "mediatype": "movie",
+          "author": "kingkearney"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.155432",
+        "type": "movie",
+        "name": "Coleção Star Wars",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 29,
+          "url": "https://mdblist.com/lists/jxduffy/star-wars-chronological-order",
+          "author": "jxduffy"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.47025",
+        "type": "movie",
+        "name": "Coleção National Geographic",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 150,
+          "url": "https://mdblist.com/lists/galacticboy/top-national-geographic-films",
+          "mediatype": "movie",
+          "author": "galacticboy"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "flixpatrol.paramount.world.movie",
+        "type": "movie",
+        "name": "Top 10 Filmes na Paramount+",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "flixpatrol.paramount.world.series",
+        "type": "series",
+        "name": "Top 10 Séries na Paramount+",
+        "enabled": true,
+        "showInHome": false,
+        "source": "flixpatrol",
+        "enableRatingPosters": true,
+        "metadata": {
+          "countrySlug": "world"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.143870",
+        "type": "movie",
+        "name": "Coleção Universo Star Trek",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 24,
+          "url": "https://mdblist.com/lists/nobnobz/star-trek-universe",
+          "author": "nobnobz"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.143090",
+        "type": "movie",
+        "name": "Coleção Universo Yellowstone",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 8,
+          "url": "https://mdblist.com/lists/deiniol39/yellowstone-universe",
+          "author": "deiniol39"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.47079",
+        "type": "movie",
+        "name": "Coleção Nickelodeon",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 386,
+          "url": "https://mdblist.com/lists/jpdooley01/nickelodeon-shows",
+          "mediatype": "show",
+          "author": "jpdooley01"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.24712",
+        "type": "series",
+        "name": "Documentários Investigativos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 446,
+          "url": "https://mdblist.com/lists/sysops/investigation-discovery-shows",
+          "mediatype": "show",
+          "author": "sysops"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.88381",
+        "type": "movie",
+        "name": "Top 100 Filmes na Crunchyroll",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 100,
+          "url": "https://mdblist.com/lists/aawalton/crunchyroll-top-100-movies",
+          "mediatype": "movie",
+          "author": "aawalton"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.88257",
+        "type": "series",
+        "name": "Top 100 Séries na Crunchyroll",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 100,
+          "url": "https://mdblist.com/lists/aawalton/crunchyroll-top-100-shows",
+          "mediatype": "show",
+          "author": "aawalton"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "streaming.atp",
+        "name": "Todos os Filmes na Apple TV+",
+        "type": "movie",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": false,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "movie"
+      },
+      {
+        "id": "streaming.dnp",
+        "name": "Todos os Filmes na Disney+",
+        "type": "movie",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": false,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "movie"
+      },
+      {
+        "id": "streaming.pmp",
+        "name": "Todos os Filmes na Paramount+",
+        "type": "movie",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": false,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "movie"
+      },
+      {
+        "id": "streaming.pcp",
+        "name": "Todos os Filmes no Peacock",
+        "type": "movie",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": false,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "movie"
+      },
+      {
+        "id": "streaming.dpe",
+        "name": "Todos os Filmes no Discovery+",
+        "type": "movie",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": false,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "movie"
+      },
+      {
+        "id": "streaming.sst",
+        "name": "Todos os Filmes no SkyShowtime",
+        "type": "series",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": false,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "series"
+      },
+      {
+        "id": "streaming.hlu",
+        "name": "Todos os Filmes no Hulu",
+        "type": "movie",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": false,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "movie"
+      },
+      {
+        "id": "streaming.cru",
+        "name": "Todos os Filmes na Crunchyroll",
+        "type": "movie",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": false,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "movie"
+      },
+      {
+        "id": "streaming.mub",
+        "name": "Todos os Filmes no MUBI",
+        "type": "movie",
+        "source": "streaming",
+        "enabled": true,
+        "showInHome": false,
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.2407",
+        "type": "movie",
+        "name": "Melhores Filmes de Ação",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 541,
+          "url": "https://mdblist.com/lists/hdlists/latest-hd-action-movies-from-1980-to-today",
+          "mediatype": "movie",
+          "author": "hdlists"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.128037",
+        "type": "movie",
+        "name": "Lançamentos de Ação",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/snoak/latest-action-movies",
+          "mediatype": "movie",
+          "author": "snoak"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.SxPNm",
+        "type": "movie",
+        "name": "Ação Moderna",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 140,
+          "url": "https://letterboxd.com/sisamim/list/modern-action/",
+          "identifier": "SxPNm",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.2408",
+        "type": "movie",
+        "name": "Melhores Filmes de Drama",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 3882,
+          "url": "https://mdblist.com/lists/hdlists/latest-hd-drama-movies-from-1980-to-today",
+          "mediatype": "movie",
+          "author": "hdlists"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.3123",
+        "type": "series",
+        "name": "Séries de Drama",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/garycrawfordgc/drama-shows",
+          "mediatype": "show",
+          "author": "garycrawfordgc"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.91296",
+        "type": "movie",
+        "name": "Drama Popular",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/snoak/drama-movies",
+          "mediatype": "movie",
+          "author": "snoak"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.2195",
+        "type": "movie",
+        "name": "Melhores Filmes de Comédia",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 4153,
+          "url": "https://mdblist.com/lists/hdlists/comedy-movies-2001-2020",
+          "mediatype": "movie",
+          "author": "hdlists"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.3122",
+        "type": "series",
+        "name": "Séries de Comédia",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 300,
+          "url": "https://mdblist.com/lists/garycrawfordgc/comedy-shows",
+          "mediatype": "show",
+          "author": "garycrawfordgc"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.128040",
+        "type": "movie",
+        "name": "Lançamentos de Comédia",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/snoak/latest-comedy-movies",
+          "mediatype": "movie",
+          "author": "snoak"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.100442",
+        "type": "movie",
+        "name": "Stand-ups",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 773,
+          "url": "https://mdblist.com/lists/notamongo5/stand-up-comedy",
+          "mediatype": "movie",
+          "author": "notamongo5"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.91893",
+        "type": "movie",
+        "name": "Filmes de Suspense Populares",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/snoak/thriller-movies",
+          "mediatype": "movie",
+          "author": "snoak"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.91894",
+        "type": "series",
+        "name": "Séries de Suspense Populares",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/snoak/thriller-shows",
+          "mediatype": "show",
+          "author": "snoak"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.128049",
+        "type": "movie",
+        "name": "Lançamentos de Suspense",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/snoak/latest-thriller-movies",
+          "mediatype": "movie",
+          "author": "snoak"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.3995",
+        "type": "movie",
+        "name": "Suspense Psicológico",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 99,
+          "url": "https://mdblist.com/lists/rizreflects/psychological-thrillers",
+          "mediatype": "movie",
+          "author": "rizreflects"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.2410",
+        "type": "movie",
+        "name": "Melhores Filmes de Terror",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 903,
+          "url": "https://mdblist.com/lists/hdlists/latest-hd-horror-movies-top-rated-from-1980-to-today",
+          "mediatype": "movie",
+          "author": "hdlists"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.128045",
+        "type": "movie",
+        "name": "Lançamentos de Terror",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/snoak/latest-horror-movies",
+          "mediatype": "movie",
+          "author": "snoak"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.3124",
+        "type": "series",
+        "name": "Séries de Terror",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 140,
+          "url": "https://mdblist.com/lists/garycrawfordgc/horror-shows",
+          "mediatype": "show",
+          "author": "garycrawfordgc"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.2412",
+        "type": "movie",
+        "name": "Melhores Filmes de Fantasia/Ficção Científica",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 900,
+          "url": "https://mdblist.com/lists/hdlists/latest-hd-fantasy-sci-fi-movies-top-rated-from-1980-to-today",
+          "mediatype": "movie",
+          "author": "hdlists"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.6607",
+        "type": "series",
+        "name": "Séries de Fantasia",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 232,
+          "url": "https://mdblist.com/lists/MaxtronTV/fantasy-tv-shows",
+          "mediatype": "show",
+          "author": "MaxtronTV"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.128262",
+        "type": "movie",
+        "name": "Filmes de Romance Populares",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/snoak/popular-romance-movies",
+          "mediatype": "movie",
+          "author": "snoak"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.128265",
+        "type": "series",
+        "name": "Séries de Romance Populares",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "url": "https://mdblist.com/lists/snoak/popular-romance-shows",
+          "mediatype": "show",
+          "author": "snoak"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.128264",
+        "type": "series",
+        "name": "Novas Séries de Romance",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "url": "https://mdblist.com/lists/snoak/latest-romance-shows",
+          "mediatype": "show",
+          "author": "snoak"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.2837",
+        "type": "movie",
+        "name": "O Melhor do Romance",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/rjchignell/best-of-romance",
+          "mediatype": "movie",
+          "author": "rjchignell"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.121922",
+        "type": "movie",
+        "name": "Filmes de Animação Populares",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/snoak/animationanime-movies",
+          "mediatype": "movie",
+          "author": "snoak"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.121921",
+        "type": "series",
+        "name": "Séries de Animação Populares",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/snoak/animationanime-shows",
+          "mediatype": "show",
+          "author": "snoak"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.8150",
+        "type": "series",
+        "name": "Animação Adulta",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 207,
+          "url": "https://mdblist.com/lists/breon64/adult-animation",
+          "mediatype": "show",
+          "author": "breon64"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.57179",
+        "type": "movie",
+        "name": "Coleção Anthony Hopkins",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 155,
+          "url": "https://mdblist.com/lists/mokono/anthony-hopkins",
+          "mediatype": "movie",
+          "author": "mokono"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.100769",
+        "type": "movie",
+        "name": "Coleção Morgan Freeman",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 80,
+          "url": "https://mdblist.com/lists/reachingout/morgan-freeman-month",
+          "mediatype": "movie",
+          "author": "reachingout"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.tU6Og",
+        "type": "movie",
+        "name": "Coleção Daniel Day-Lewis",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 25,
+          "url": "https://letterboxd.com/fernanp_23/list/daniel-day-lewis/",
+          "identifier": "tU6Og",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.57202",
+        "type": "movie",
+        "name": "Coleção Christian Bale",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 76,
+          "url": "https://mdblist.com/lists/mokono/christian-bale",
+          "mediatype": "movie",
+          "author": "mokono"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.77131",
+        "type": "movie",
+        "name": "Coleção Jake Gyllenhaal",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 72,
+          "url": "https://mdblist.com/lists/andyjacoo/jake-gyllenhaal-2kin4hpskb",
+          "mediatype": "movie",
+          "author": "andyjacoo"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.157927",
+        "type": "movie",
+        "name": "Coleção Ryan Gosling",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 46,
+          "url": "https://mdblist.com/lists/billryan/ryan-gosling-films",
+          "mediatype": "movie",
+          "author": "billryan"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.76456",
+        "type": "movie",
+        "name": "Coleção Margot Robbie",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 38,
+          "url": "https://mdblist.com/lists/itsall4meplease/margot-robbie",
+          "mediatype": "movie",
+          "author": "itsall4meplease"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.100770",
+        "type": "movie",
+        "name": "Coleção Natalie Portman",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 70,
+          "url": "https://mdblist.com/lists/reachingout/natalie-portman-month",
+          "mediatype": "movie",
+          "author": "reachingout"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.158987",
+        "type": "movie",
+        "name": "Coleção Timothée Chalamet",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 17,
+          "url": "https://mdblist.com/lists/nobnobz/actor-timoth%C3%A9e-chalamet-1dy5dcud8e",
+          "mediatype": "movie",
+          "author": "nobnobz"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.57200",
+        "type": "movie",
+        "name": "Coleção Joaquin Phoenix",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 62,
+          "url": "https://mdblist.com/lists/mokono/joaquin-phoenix",
+          "mediatype": "movie",
+          "author": "mokono"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.159033",
+        "type": "movie",
+        "name": "Coleção Florence Pugh",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 18,
+          "url": "https://mdblist.com/lists/nobnobz/actor-florence-pugh-t50c8h9o4g",
+          "mediatype": "movie",
+          "author": "nobnobz"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.114401",
+        "type": "movie",
+        "name": "Coleção Scarlett Johansson",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 98,
+          "url": "https://mdblist.com/lists/caballitopalo/scarlett-johanssons-movies",
+          "mediatype": "movie",
+          "author": "caballitopalo"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.120264",
+        "type": "movie",
+        "name": "Coleção Cate Blanchett",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 115,
+          "url": "https://mdblist.com/lists/jossbosses/cate-blanchett",
+          "mediatype": "movie",
+          "author": "jossbosses"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.102983",
+        "type": "movie",
+        "name": "Coleção Avatar",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 5,
+          "url": "https://mdblist.com/lists/thebirdod/avatar-collection",
+          "mediatype": "movie",
+          "author": "thebirdod"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.7vfgk",
+        "type": "movie",
+        "name": "Coleção Matrix",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 14,
+          "url": "https://letterboxd.com/portion/list/matrix/",
+          "identifier": "7vfgk",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.4lK4",
+        "type": "movie",
+        "name": "Coleção James Bond",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 27,
+          "url": "https://letterboxd.com/samuhoenle/list/james-bond/",
+          "identifier": "4lK4",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.d8w0G",
+        "type": "movie",
+        "name": "Coleção Jurassic Park",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 36,
+          "url": "https://letterboxd.com/fantic/list/jurassic-park/",
+          "identifier": "d8w0G",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.dcpWc",
+        "type": "movie",
+        "name": "Coleção Indiana Jones",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 39,
+          "url": "https://letterboxd.com/fantic/list/indiana-jones/",
+          "identifier": "dcpWc",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.dd5z0",
+        "type": "movie",
+        "name": "Coleção Piratas do Caribe",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 13,
+          "url": "https://letterboxd.com/fantic/list/pirates-of-the-caribbean/",
+          "identifier": "dd5z0",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.dd69i",
+        "type": "movie",
+        "name": "Coleção Planeta dos Macacos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 16,
+          "url": "https://letterboxd.com/fantic/list/planet-of-the-apes/",
+          "identifier": "dd69i",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.cz0mq",
+        "type": "movie",
+        "name": "Coleção Invocação do Mal",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 11,
+          "url": "https://letterboxd.com/cinemaman29/list/the-conjuring/",
+          "identifier": "cz0mq",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.PnlE",
+        "type": "movie",
+        "name": "Coleção Halloween",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 13,
+          "url": "https://letterboxd.com/grabmymask/list/halloween/",
+          "identifier": "PnlE",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.1yPmg",
+        "type": "movie",
+        "name": "Coleção Sexta-Feira 13",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 12,
+          "url": "https://letterboxd.com/jkipling/list/friday-13th/",
+          "identifier": "1yPmg",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.dfhgo",
+        "type": "movie",
+        "name": "Coleção Jogos Mortais",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 17,
+          "url": "https://letterboxd.com/fantic/list/saw/",
+          "identifier": "dfhgo",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.demGY",
+        "type": "movie",
+        "name": "Coleção Pânico",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 9,
+          "url": "https://letterboxd.com/fantic/list/scream/",
+          "identifier": "demGY",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.fNDgc",
+        "type": "movie",
+        "name": "Coleção Brinquedo Assassino",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 8,
+          "url": "https://letterboxd.com/ibuprofenbarb1e/list/chucky/",
+          "identifier": "fNDgc",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.dcofG",
+        "type": "movie",
+        "name": "Coleção Shrek",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 20,
+          "url": "https://letterboxd.com/fantic/list/shrek/",
+          "identifier": "dcofG",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.dcrMo",
+        "type": "movie",
+        "name": "Coleção Transformers",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 49,
+          "url": "https://letterboxd.com/fantic/list/transformers/",
+          "identifier": "dcrMo",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.yG7fS",
+        "type": "movie",
+        "name": "Diretor: Nolan",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 13,
+          "url": "https://letterboxd.com/discovery_17/list/nolan/",
+          "identifier": "yG7fS",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.64533",
+        "type": "movie",
+        "name": "Filmes Argentinos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1205,
+          "url": "https://mdblist.com/lists/mxtrakttv/argentina-movies",
+          "mediatype": "movie",
+          "author": "mxtrakttv"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.64335",
+        "type": "series",
+        "name": "Séries Argentinas",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 312,
+          "url": "https://mdblist.com/lists/mxtrakttv/argentina-series",
+          "mediatype": "show",
+          "author": "mxtrakttv"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.154409",
+        "type": "movie",
+        "name": "Introdução ao Cinema Francês",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 50,
+          "url": "https://mdblist.com/lists/roskoe88/intro-to-french-cinema",
+          "mediatype": "movie",
+          "author": "roskoe88"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.72922",
+        "type": "movie",
+        "name": "Filmes Franceses",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/jarvis-13128907/france-movies",
+          "mediatype": "movie",
+          "author": "jarvis-13128907"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.49276",
+        "type": "movie",
+        "name": "Cinema Francês Recente",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 3976,
+          "url": "https://mdblist.com/lists/factoor/latest-french-cinema",
+          "mediatype": "movie",
+          "author": "factoor"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.110405",
+        "type": "movie",
+        "name": "Filmes Coreanos Recomendados",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 99,
+          "url": "https://mdblist.com/lists/molemovies/recommended-korean-cinema",
+          "mediatype": "movie",
+          "author": "molemovies"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.155586",
+        "type": "movie",
+        "name": "Filmes Coreanos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1418,
+          "url": "https://mdblist.com/lists/narmeian/korean-cinema",
+          "mediatype": "movie",
+          "author": "narmeian"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.3584",
+        "type": "series",
+        "name": "Melhores Séries Coreanas",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 983,
+          "url": "https://mdblist.com/lists/saltydude/top-rated-korean-tv-shows",
+          "mediatype": "show",
+          "author": "saltydude"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.75500",
+        "type": "movie",
+        "name": "Filmes Coreanos Populares",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 500,
+          "url": "https://mdblist.com/lists/an-kah/popular-korean-movies",
+          "mediatype": "movie",
+          "author": "an-kah"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.148832",
+        "type": "movie",
+        "name": "Filmes Espanhóis",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 782,
+          "url": "https://mdblist.com/lists/ftor327/spain-movies",
+          "mediatype": "movie",
+          "author": "ftor327"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.148833",
+        "type": "series",
+        "name": "Séries Espanholas",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 171,
+          "url": "https://mdblist.com/lists/ftor327/spain-series",
+          "mediatype": "show",
+          "author": "ftor327"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.102682",
+        "type": "movie",
+        "name": "Filmes Espanhóis Populares",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 300,
+          "url": "https://mdblist.com/lists/snafuki/spain-popular-movies",
+          "mediatype": "movie",
+          "author": "snafuki"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.102681",
+        "type": "series",
+        "name": "Séries Espanholas Populares",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 300,
+          "url": "https://mdblist.com/lists/snafuki/spain-popular-tv-shows",
+          "mediatype": "show",
+          "author": "snafuki"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "letterboxd.ok9c",
+        "type": "movie",
+        "name": "Introdução ao Cinema Italiano",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 30,
+          "url": "https://letterboxd.com/richardjduffy/list/italian-cinema/",
+          "identifier": "ok9c",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.ko8Ji",
+        "type": "movie",
+        "name": "Filmes Italianos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "url": "https://letterboxd.com/murraldo/list/italian-movies-1/",
+          "identifier": "ko8Ji",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.bJ26g",
+        "type": "movie",
+        "name": "Introdução ao Cinema Japonês",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 104,
+          "url": "https://letterboxd.com/tomodachi/list/intro-to-japanese-film-history/",
+          "identifier": "bJ26g",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.103432",
+        "type": "movie",
+        "name": "Filmes Japoneses",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1116,
+          "url": "https://mdblist.com/lists/jarvis-15299542/japanese-cinema",
+          "mediatype": "movie",
+          "author": "jarvis-15299542"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.144004",
+        "type": "series",
+        "name": "Séries Japonesas",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 7849,
+          "url": "https://mdblist.com/lists/nuguns17/japanese-shows",
+          "mediatype": "show",
+          "author": "nuguns17"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.162041",
+        "type": "movie",
+        "name": "Filmes do Reino Unido",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 3578,
+          "url": "https://mdblist.com/lists/andemer/latest-streaming-movies",
+          "mediatype": "movie",
+          "author": "andemer"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.101766",
+        "type": "movie",
+        "name": "Filmes Recentes do Reino Unido",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1757,
+          "url": "https://mdblist.com/lists/amything/latest-uk-movies",
+          "mediatype": "movie",
+          "author": "amything"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.3091",
+        "type": "series",
+        "name": "Séries do Reino Unido",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 300,
+          "url": "https://mdblist.com/lists/garycrawfordgc/channel-4-shows",
+          "mediatype": "show",
+          "author": "garycrawfordgc"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "letterboxd.cdA5c",
+        "type": "movie",
+        "name": "Introdução ao Cinema Alemão",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 58,
+          "url": "https://letterboxd.com/nvdw/list/germany-cinema-around-the-world/",
+          "identifier": "cdA5c",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.165498",
+        "type": "movie",
+        "name": "Filmes Alemães",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 9030,
+          "url": "https://mdblist.com/lists/itsdrewy97/germany",
+          "mediatype": "movie",
+          "author": "itsdrewy97"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.1zkf6",
+        "type": "movie",
+        "name": "Introdução ao Cinema Mexicano",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 244,
+          "url": "https://letterboxd.com/dawnofthedead/list/mexican-cinema/",
+          "identifier": "1zkf6",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.cLf96",
+        "type": "movie",
+        "name": "Melhores Filmes Mexicanos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 250,
+          "url": "https://letterboxd.com/official/list/top-250-mexican-films/",
+          "identifier": "cLf96",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.RqIIG",
+        "type": "movie",
+        "name": "Mais Filmes Mexicanos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "url": "https://letterboxd.com/kon0787/list/mexican-movies/",
+          "identifier": "RqIIG",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.3PcIY",
+        "type": "movie",
+        "name": "Introdução ao Cinema Brasileiro",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "url": "https://letterboxd.com/coffeejazzlofi/list/an-introduction-to-brazilian-film-history/",
+          "identifier": "3PcIY",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.136413",
+        "type": "movie",
+        "name": "Filmes Brasileiros",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 5960,
+          "url": "https://mdblist.com/lists/biracosme/brazilian-movies",
+          "mediatype": "movie",
+          "author": "biracosme"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.gussouzanow.brazilian-shows",
+        "type": "series",
+        "name": "Séries Brasileiras",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sourceUrl": "https://api.mdblist.com/lists/gussouzanow/brazilian-shows/items",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 6589,
+          "url": "https://mdblist.com/lists/gussouzanow/brazilian-shows",
+          "mediatype": "mixed",
+          "author": "gussouzanow"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "letterboxd.5Rj3U",
+        "type": "movie",
+        "name": "Introdução ao Cinema Indiano",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 30,
+          "url": "https://letterboxd.com/mithras_/list/bollywood-essentials-and-my-intro-to-indian/",
+          "identifier": "5Rj3U",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.jBye",
+        "type": "movie",
+        "name": "Filmes Indianos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "url": "https://letterboxd.com/mcl/list/indian-cinema/",
+          "identifier": "jBye",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.11103",
+        "type": "series",
+        "name": "Séries Indianas",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1606,
+          "url": "https://mdblist.com/lists/cakepopcorn/top-rated-indian-shows",
+          "mediatype": "show",
+          "author": "cakepopcorn"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "letterboxd.4rnwU",
+        "type": "movie",
+        "name": "Vencedores de Melhor Filme",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 97,
+          "url": "https://letterboxd.com/thaais/list/oscar/",
+          "identifier": "4rnwU",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.Tg63e",
+        "type": "movie",
+        "name": "Vencedoras de Melhor Atriz",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 101,
+          "url": "https://letterboxd.com/thaais/list/actress-in-a-leading-role/",
+          "identifier": "Tg63e",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.Tg65O",
+        "type": "movie",
+        "name": "Vencedores de Melhor Ator",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 100,
+          "url": "https://letterboxd.com/thaais/list/actor-in-a-leading-role/",
+          "identifier": "Tg65O",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.Tg5Sq",
+        "type": "movie",
+        "name": "Vencedores de Melhor Diretor",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 99,
+          "url": "https://letterboxd.com/thaais/list/director/",
+          "identifier": "Tg5Sq",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.Tg5WW",
+        "type": "movie",
+        "name": "Vencedores de Melhor Filme Internacional",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 78,
+          "url": "https://letterboxd.com/thaais/list/international-feature/",
+          "identifier": "Tg5WW",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.Tg5o6",
+        "type": "movie",
+        "name": "Vencedores de Melhor Som",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 122,
+          "url": "https://letterboxd.com/thaais/list/sound/",
+          "identifier": "Tg5o6",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.Tg546",
+        "type": "movie",
+        "name": "Vencedores de Melhor Documentário",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 89,
+          "url": "https://letterboxd.com/thaais/list/documentary-feature/",
+          "identifier": "Tg546",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.Tg4WG",
+        "type": "movie",
+        "name": "Vencedores de Melhores Efeitos Visuais",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 63,
+          "url": "https://letterboxd.com/thaais/list/visual-effects/",
+          "identifier": "Tg4WG",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.5BNSw",
+        "type": "movie",
+        "name": "Vencedores de Cannes",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 490,
+          "url": "https://letterboxd.com/lukas1999/list/cannes/",
+          "identifier": "5BNSw",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.146622",
+        "type": "movie",
+        "name": "Vencedores do Festival de Veneza",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1328,
+          "url": "https://mdblist.com/lists/atalante421/venice-film-festival-winners",
+          "mediatype": "movie",
+          "author": "atalante421"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.Tjz42",
+        "type": "movie",
+        "name": "Vencedores do BAFTA",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "url": "https://letterboxd.com/jacquard/list/bafta/",
+          "identifier": "Tjz42",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.149615",
+        "type": "movie",
+        "name": "Vencedores do Globo de Ouro",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 156,
+          "url": "https://mdblist.com/lists/nobnob/collection-golden-globes-winners",
+          "author": "nobnob"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.129917",
+        "type": "movie",
+        "name": "Indicados ao Globo de Ouro 2026",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 25,
+          "url": "https://mdblist.com/lists/bsm-venger/golden-globes-2026-nominees",
+          "author": "bsm-venger"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.129385",
+        "type": "movie",
+        "name": "Atores e Atrizes Indicados",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 54,
+          "url": "https://mdblist.com/lists/julien21012101/actors-and-actresses-nominated-for-the-2026-golden-globes-and-the-films-they-represent",
+          "author": "julien21012101"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.55694",
+        "type": "movie",
+        "name": "Filmes dos Anos 60",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1000,
+          "url": "https://mdblist.com/lists/ryankeast/movies-decades-1960s-4oulwbhwix",
+          "mediatype": "movie",
+          "author": "ryankeast"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.55175",
+        "type": "movie",
+        "name": "Filmes dos Anos 70",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1000,
+          "url": "https://mdblist.com/lists/ryankeast/movies-decades-1970s",
+          "mediatype": "movie",
+          "author": "ryankeast"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.2820",
+        "type": "movie",
+        "name": "O Melhor dos Anos 70",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 250,
+          "url": "https://mdblist.com/lists/rjchignell/best-of-the-1970-s",
+          "mediatype": "movie",
+          "author": "rjchignell"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.55174",
+        "type": "movie",
+        "name": "Filmes dos Anos 80",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1000,
+          "url": "https://mdblist.com/lists/ryankeast/movies-decades-1980s",
+          "mediatype": "movie",
+          "author": "ryankeast"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.55173",
+        "type": "movie",
+        "name": "Filmes dos Anos 90",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1000,
+          "url": "https://mdblist.com/lists/ryankeast/movies-decades-1990s",
+          "mediatype": "movie",
+          "author": "ryankeast"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.2818",
+        "type": "movie",
+        "name": "O Melhor dos Anos 90",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 250,
+          "url": "https://mdblist.com/lists/rjchignell/best-of-the-1990-s",
+          "mediatype": "movie",
+          "author": "rjchignell"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.55172",
+        "type": "movie",
+        "name": "Filmes dos Anos 2000",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1000,
+          "url": "https://mdblist.com/lists/ryankeast/movies-decades-2000s",
+          "mediatype": "movie",
+          "author": "ryankeast"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.55171",
+        "type": "movie",
+        "name": "Filmes dos Anos 2010",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1000,
+          "url": "https://mdblist.com/lists/ryankeast/movies-decades-2010s",
+          "mediatype": "movie",
+          "author": "ryankeast"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.55170",
+        "type": "movie",
+        "name": "Filmes dos Anos 2020",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 1000,
+          "url": "https://mdblist.com/lists/ryankeast/movies-decades-2020s-a2h6mk0dh0",
+          "mediatype": "movie",
+          "author": "ryankeast"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.HSJte",
+        "type": "movie",
+        "name": "Dia dos Mortos: Terror Mexicano",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 65,
+          "url": "https://letterboxd.com/cinemathek_zlb/list/dia-de-los-muertos-mexican-horror-the-full/",
+          "identifier": "HSJte",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.29324",
+        "type": "movie",
+        "name": "Filmes Baseados em Fatos Reais",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 5776,
+          "url": "https://mdblist.com/lists/slander2328/movies-based-on-a-true-story",
+          "mediatype": "movie",
+          "author": "slander2328"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.3129",
+        "type": "movie",
+        "name": "Filmes de Super-Heróis e Quadrinhos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 526,
+          "url": "https://mdblist.com/lists/jmla/superhero-based-on-comic-superhuman-abilities",
+          "mediatype": "movie",
+          "author": "jmla"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.14813",
+        "type": "movie",
+        "name": "Filmes Baseados em Videogames",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 70,
+          "url": "https://mdblist.com/lists/awesomeaustn/movies-based-on-video-games-live-action",
+          "author": "awesomeaustn"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.51458",
+        "type": "movie",
+        "name": "Filmes Baseados em Livros",
+        "enabled": true,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 2495,
+          "url": "https://mdblist.com/lists/godzgiftmm/based-on-a-book-uncollected",
+          "mediatype": "movie",
+          "author": "godzgiftmm"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.iUlkw",
+        "type": "movie",
+        "name": "Biografias",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "url": "https://letterboxd.com/nislav2001/list/biographies/",
+          "identifier": "iUlkw",
+          "isWatchlist": false
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.recommendations.movies",
+        "type": "movie",
+        "name": "Filmes Recomendados",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "displayType": "movie",
+        "enableRatingPosters": true
+      },
+      {
+        "id": "trakt.recommendations.shows",
+        "type": "series",
+        "name": "Séries Recomendadas",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "displayType": "series"
+      },
+      {
+        "id": "mdblist.139057",
+        "type": "movie",
+        "name": "Últimos Lançamentos em 4K",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 111,
+          "author": "maniac2021",
+          "url": "https://mdblist.com/lists/maniac2021/latest-4k-releases",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.162527",
+        "type": "movie",
+        "name": "Em Cartaz nos Cinemas",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 5,
+          "author": "24hz",
+          "url": "https://mdblist.com/lists/24hz/in-theatres"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.2143363",
+        "type": "series",
+        "name": "Top 250 Séries IMDb",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 241,
+          "privacy": "public",
+          "author": "justin",
+          "description": "Top 250 TV shows, as rated by IMDB members.  List updated daily.",
+          "url": "https://trakt.tv/lists/2143363"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "trakt.list.11632963",
+        "type": "movie",
+        "name": "Filmes Clássicos Top 100",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 100,
+          "privacy": "public",
+          "author": "travvyt",
+          "description": "Top 100 Classic Movies as rated by Turner Classic Movies (TCM)",
+          "url": "https://trakt.tv/lists/11632963"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.10073359",
+        "type": "series",
+        "name": "Melhores Séries do Discovery+",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 221,
+          "privacy": "public",
+          "author": "porkie16",
+          "description": "List created and maintained by https://listrr.pro\r\n\r\nNormal Filters:\r\nContent Type: FiltersCountries: au, ca, gb, us, gb\r\nNetworks: Discovery, Discovery (US), Discovery Canada, Discovery Channel (AU), Discovery Channel (Australia), Discovery Channel (CA), Discovery Channel (Canada), Discovery Channel (UK), Discovery Channel Canada, Discovery Chnnel, Discovery Family, Discovery HD World, Discovery Health, Discovery Health Channel, Discovery History, Discovery Kids, Discovery Life, Discovery MAX, Discovery Real Time, Discovery Science, Discovery Shed, Discovery Turbo, Discovery Turbo UK\r\nMin rating: 65\r\nMax rating: 100\r\nMin votes: 0\r\nMin runtime: 30\r\nMax runtime: 250\r\nMin year: 1910\r\nMax year: 2025",
+          "url": "https://trakt.tv/lists/10073359"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "trakt.list.23274639",
+        "type": "movie",
+        "name": "Ação dos Anos 80",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 658,
+          "privacy": "public",
+          "author": "marcelocastanheira",
+          "description": "*** Unfortunately, due to the new non-VIP member politics (ridiculous 2 lists per user and 100 items per list), this list cannot be updated. Sorry. Track TV isn't the same anymore.  :(",
+          "url": "https://trakt.tv/lists/23274639"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.10791018",
+        "type": "movie",
+        "name": "Coleção Robert De Niro",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "percentage",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 64,
+          "privacy": "public",
+          "author": "gogo22",
+          "description": "",
+          "url": "https://trakt.tv/lists/10791018"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.10790622",
+        "type": "movie",
+        "name": "Coleção Al Pacino",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "percentage",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 41,
+          "privacy": "public",
+          "author": "gogo22",
+          "description": "",
+          "url": "https://trakt.tv/lists/10790622"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.808721",
+        "type": "movie",
+        "name": "Coleção Meryl Streep",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 55,
+          "privacy": "public",
+          "author": "TheMoodymuck",
+          "description": "ALL Streep's movies\r\n",
+          "url": "https://trakt.tv/lists/808721"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.10158745",
+        "type": "movie",
+        "name": "Coleção Jack Nicholson",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 121,
+          "privacy": "public",
+          "author": "minorwm",
+          "description": "",
+          "url": "https://trakt.tv/lists/10158745"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.6241136",
+        "type": "all",
+        "name": "Diretor: Martin Scorsese",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 26,
+          "privacy": "public",
+          "author": "Origin14",
+          "description": "",
+          "url": "https://trakt.tv/lists/6241136"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "trakt.list.6241262",
+        "type": "all",
+        "name": "Diretor: David Fincher",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 12,
+          "privacy": "public",
+          "author": "Origin14",
+          "description": "",
+          "url": "https://trakt.tv/lists/6241262"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "trakt.list.1558961",
+        "type": "all",
+        "name": "Diretor: Quentin Tarantino",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 9,
+          "privacy": "public",
+          "author": "movistapp",
+          "description": "",
+          "url": "https://trakt.tv/lists/1558961"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "trakt.list.6241405",
+        "type": "all",
+        "name": "Diretor: Stanley Kubrick",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 13,
+          "privacy": "public",
+          "author": "Origin14",
+          "description": "",
+          "url": "https://trakt.tv/lists/6241405"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "trakt.list.6241294",
+        "type": "all",
+        "name": "Diretor: Denis Villeneuve",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 11,
+          "privacy": "public",
+          "author": "Origin14",
+          "description": "",
+          "url": "https://trakt.tv/lists/6241294"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "trakt.list.6252074",
+        "type": "all",
+        "name": "Diretor: Wes Anderson",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 12,
+          "privacy": "public",
+          "author": "Origin14",
+          "description": "",
+          "url": "https://trakt.tv/lists/6252074"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "trakt.list.6241187",
+        "type": "all",
+        "name": "Diretor: Steven Spielberg",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 34,
+          "privacy": "public",
+          "author": "Origin14",
+          "description": "",
+          "url": "https://trakt.tv/lists/6241187"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "trakt.list.6241250",
+        "type": "all",
+        "name": "Diretor: Ridley Scott",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 30,
+          "privacy": "public",
+          "author": "Origin14",
+          "description": "",
+          "url": "https://trakt.tv/lists/6241250"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "letterboxd.Tg5MW",
+        "type": "movie",
+        "name": "Vencedores de Melhor Canção Original",
+        "enabled": false,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 92,
+          "isWatchlist": false,
+          "identifier": "Tg5MW",
+          "url": "https://letterboxd.com/thaais/list/original-song/"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.8113",
+        "type": "movie",
+        "name": "Filmes de Natal",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 149,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/christmas-movies",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.7943",
+        "type": "movie",
+        "name": "Filmes de Ação de Graças",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 70,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/thanksgiving-movies",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.41422",
+        "type": "movie",
+        "name": "Melhores Filmes de Halloween de Todos os Tempos",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 128,
+          "author": "hdlists",
+          "url": "https://mdblist.com/lists/hdlists/halloween-movies-the-best-of-all-time",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.142222",
+        "type": "movie",
+        "name": "Melhores Filmes de Dia dos Namorados",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 211,
+          "author": "craigywulse23",
+          "url": "https://mdblist.com/lists/craigywulse23/top-valentines-movies",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.mv94",
+        "type": "movie",
+        "name": "Dia de São Patrício",
+        "enabled": false,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 64,
+          "isWatchlist": false,
+          "identifier": "mv94",
+          "url": "https://letterboxd.com/blood_countess/list/st-patricks-day/"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.83601",
+        "type": "movie",
+        "name": "60 Minutos ou Menos",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 186,
+          "author": "roolfer",
+          "url": "https://mdblist.com/lists/roolfer/higesht-rated-unwatched-60-minutes-or-less",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.83707",
+        "type": "movie",
+        "name": "90 Minutos ou Menos",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 180,
+          "author": "roolfer",
+          "url": "https://mdblist.com/lists/roolfer/highest-rated-unwatched-90-minutes-or-less",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "mdblist.141346",
+        "type": "movie",
+        "name": "Menos de 2 Horas",
+        "enabled": false,
+        "showInHome": false,
+        "source": "mdblist",
+        "sort": "default",
+        "order": "asc",
+        "cacheTTL": 86400,
+        "genreSelection": "standard",
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 100,
+          "author": "stephenwall95",
+          "url": "https://mdblist.com/lists/stephenwall95/popular-movies-under-2-hours",
+          "mediatype": "movie"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.bjMmi",
+        "type": "movie",
+        "name": "Filmes Longos",
+        "enabled": false,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 200,
+          "isWatchlist": false,
+          "identifier": "bjMmi",
+          "url": "https://letterboxd.com/frantz/list/long-movies/"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.11255166",
+        "type": "movie",
+        "name": "Filmes de Ação (2000 - 2020)",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "popularity",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 1103,
+          "privacy": "public",
+          "author": "SpawnofSatan",
+          "description": "Top action movies from 2000 to 2020 - List starts with newest to the oldest - I am still adding to this list",
+          "url": "https://trakt.tv/lists/11255166"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.4297336",
+        "type": "movie",
+        "name": "Top 10 Filmes de Ação do Século XXI",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 10,
+          "privacy": "public",
+          "author": "kylecm",
+          "description": "",
+          "url": "https://trakt.tv/lists/4297336"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.825738",
+        "type": "movie",
+        "name": "Comédia de Ação",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 36,
+          "privacy": "public",
+          "author": "FiLM_ReeL",
+          "description": "",
+          "url": "https://trakt.tv/lists/825738"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.4121497",
+        "type": "movie",
+        "name": "Ação de Kung Fu",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 45,
+          "privacy": "public",
+          "author": "syncere",
+          "description": "Fighting  + Action movies primarily foreign",
+          "url": "https://trakt.tv/lists/4121497"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.4403343",
+        "type": "all",
+        "name": "Super-Heróis",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 702,
+          "privacy": "public",
+          "author": "zubiaks",
+          "description": "Missing something?",
+          "url": "https://trakt.tv/lists/4403343"
+        },
+        "displayType": "all"
+      },
+      {
+        "id": "trakt.list.5570260",
+        "type": "series",
+        "name": "Dramas Coreanos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 975,
+          "privacy": "public",
+          "author": "xScaredyCat",
+          "description": "Korean dramas.\r\n\r\nFor inspiration of korean and other dramas also see my general drama list: https://trakt.tv/users/xscaredycat/lists/asian-dramas",
+          "url": "https://trakt.tv/lists/5570260"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "trakt.list.5570280",
+        "type": "series",
+        "name": "Dramas Japoneses",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 347,
+          "privacy": "public",
+          "author": "xScaredyCat",
+          "description": "Japanese dramas.\r\n\r\nFor inspiration of japanese and other dramas also see my general drama list: https://trakt.tv/users/xscaredycat/lists/asian-dramas",
+          "url": "https://trakt.tv/lists/5570280"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "trakt.list.11806126",
+        "type": "series",
+        "name": "Dramas Turcos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 49,
+          "privacy": "public",
+          "author": "Yoly76",
+          "description": "Turkish dramas that I've watched, watching or want to watch.",
+          "url": "https://trakt.tv/lists/11806126"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "trakt.list.21676562",
+        "type": "movie",
+        "name": "Melhores Filmes de Drama",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 9,
+          "privacy": "public",
+          "author": "majeed_pk",
+          "description": "",
+          "url": "https://trakt.tv/lists/21676562"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.22847145",
+        "type": "movie",
+        "name": "Melhores Filmes de Drama do IMDb",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 250,
+          "privacy": "public",
+          "author": "IrishStevo",
+          "description": "IMDb's Top Drama Movies. \n\nMinimum of 25,000 votes, minimum rating of 6.0, maximum of 250 movies.\n\nLast Updated: May 4, 2026",
+          "url": "https://trakt.tv/lists/22847145"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.22097600",
+        "type": "series",
+        "name": "Top 100 Séries de Comédia",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 99,
+          "privacy": "public",
+          "author": "majeed_pk",
+          "description": "",
+          "url": "https://trakt.tv/lists/22097600"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "trakt.list.6678796",
+        "type": "movie",
+        "name": "Comédias Românticas",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 296,
+          "privacy": "public",
+          "author": "Hammers Lists",
+          "description": "",
+          "url": "https://trakt.tv/lists/6678796"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.1076182",
+        "type": "movie",
+        "name": "Comédia Britânica",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 172,
+          "privacy": "public",
+          "author": "pauls67",
+          "description": "British Comedy",
+          "url": "https://trakt.tv/lists/1076182"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.23423498",
+        "type": "movie",
+        "name": "Terror de Comédia",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "tmdb_votes",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 630,
+          "privacy": "public",
+          "author": "RavynLoony",
+          "description": "Comedy horror. Updated monthly.",
+          "url": "https://trakt.tv/lists/23423498"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.1492847",
+        "type": "movie",
+        "name": "Comédia de 20 Minutos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 202,
+          "privacy": "public",
+          "author": "WinterWinds",
+          "description": "",
+          "url": "https://trakt.tv/lists/1492847"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.24787817",
+        "type": "movie",
+        "name": "Comédia Australiana",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 11,
+          "privacy": "public",
+          "author": "Kissybeez",
+          "description": "You don’t have to be Australian to laugh at these shows, but it helps!",
+          "url": "https://trakt.tv/lists/24787817"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.25486050",
+        "type": "movie",
+        "name": "Suspense de Espionagem",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 167,
+          "privacy": "public",
+          "author": "majeed_pk",
+          "description": "Movies with spy plot in any form (dramas, action, adventure, comedies, war, crime, mystery, conspiracy theories, political thrillers, science fiction, e.t.c.).\r\n\r\nDefinition: A Spy movie shows the espionage activities of government agents seeking to uncover or maintain secrets from each other and for one country or for the benefit of another. Offering a combination of exciting escapism, technological thrills, and exotic locales, and combine the action and science fiction genres. They may also involve elements of political thrillers.\r\n\r\nEssential / Must-see / Genre-defying: espionage movies:\r\n\r\nNorth By Northwest (1959)\r\nNotorious (1946)\r\nThe Conversation (1974)\r\nMission: Impossible (1996)\r\nCasino Royale (2006)",
+          "url": "https://trakt.tv/lists/25486050"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.22847415",
+        "type": "movie",
+        "name": "Melhores Filmes de Suspense do IMDb",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 250,
+          "privacy": "public",
+          "author": "IrishStevo",
+          "description": "IMDb's Top Thriller Movies. \n\nMinimum of 25,000 votes, minimum rating of 6.0, maximum of 250 movies.\n\nLast Updated: May 4, 2026",
+          "url": "https://trakt.tv/lists/22847415"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.28527050",
+        "type": "movie",
+        "name": "50 Melhores Suspenses Psicológicos Indianos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 50,
+          "privacy": "public",
+          "author": "majeed_pk",
+          "description": "",
+          "url": "https://trakt.tv/lists/28527050"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.1343915",
+        "type": "movie",
+        "name": "Suspense Político",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "random",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 51,
+          "privacy": "public",
+          "author": "kingkearney",
+          "description": "Netflix Genre",
+          "url": "https://trakt.tv/lists/1343915"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.21697354",
+        "type": "movie",
+        "name": "Suspense de Mistério Coreano",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 72,
+          "privacy": "public",
+          "author": "vipulxgupta",
+          "description": "",
+          "url": "https://trakt.tv/lists/21697354"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.27276733",
+        "type": "movie",
+        "name": "Suspense Investigativo",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 87,
+          "privacy": "public",
+          "author": "majeed_pk",
+          "description": "",
+          "url": "https://trakt.tv/lists/27276733"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.4203408",
+        "type": "movie",
+        "name": "Rotten Tomatoes: Melhores Filmes de Terror de Todos os Tempos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 200,
+          "privacy": "public",
+          "author": "lish408",
+          "description": "https://editorial.rottentomatoes.com/guide/best-horror-movies-of-all-time/\r\n\r\nUPDATED: 2/9/26",
+          "url": "https://trakt.tv/lists/4203408"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.2067889",
+        "type": "movie",
+        "name": "The Horror Club: O Melhor dos Filmes Slasher",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 36,
+          "privacy": "public",
+          "author": "sp1ti",
+          "description": "> When we think of Slasher Flicks, we mainly think of masked killers, blood, clever kills, and promiscuous teens in various stages of undress; because that's what they are, for the most part. There are plenty of Slashers that offer more than just visceral thrills though, giving us things like atmosphere, tension, genuine terror, levity, and even solid stories that help fray our nerves in different and clever ways.\r\n> \r\n> No matter what variety they come in though, the Slasher Flick is an important staple in the Horror Genre, and one that most Horror Fanatics tend to embrace with open arms.  \r\n\r\nFor the first 6 movies in the list:\r\n\r\n> If you're in the mood for a truly quality Slasher Flick, any of the Classic movies in our Top Six will do you right. All 6 of them are true Classics for a reason; they changed the Horror Genre as a whole, each to different degrees, and they all bring their own unique and terrifying vision to a Sub-Genre that is usually dismissed as being nothing more than a vehicle for cheap thrills. \r\n\r\nFor the remaining:\r\n\r\n> Below are the rest of our 30 Best Slasher Flicks, and of course, a few Honorable Mentions thrown in for good measure. Keep in mind that no \"Best of\" list is ever perfect, but merely a solid starting point for anyone looking to watch some great flicks.   \r\n\r\nThe last 6 being \"Honorable Mentions\".\r\n\r\nSource: `http://thehorrorclub.blogspot.ch/2015/08/the-best-of-slasher-flicks.html#.VvU_RafhCUl`\r\n",
+          "url": "https://trakt.tv/lists/2067889"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.22535146",
+        "type": "movie",
+        "name": "Pérolas Escondidas do Terror",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 365,
+          "privacy": "public",
+          "author": "Phantasmx1975",
+          "description": "Movies to watch when you think you have seen every good horror movie.  These are horror movies that don't appear on most horror lists, but are still very worth watching.",
+          "url": "https://trakt.tv/lists/22535146"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.23445415",
+        "type": "movie",
+        "name": "Terror Francês",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "watched",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 138,
+          "privacy": "public",
+          "author": "RavynLoony",
+          "description": "French horror. Updated weekly.",
+          "url": "https://trakt.tv/lists/23445415"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.2768146",
+        "type": "movie",
+        "name": "Terror Asiático",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 148,
+          "privacy": "public",
+          "author": "prrrolina",
+          "description": "",
+          "url": "https://trakt.tv/lists/2768146"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.819973",
+        "type": "movie",
+        "name": "Terror Japonês",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 50,
+          "privacy": "public",
+          "author": "chriskevin",
+          "description": "",
+          "url": "https://trakt.tv/lists/819973"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.10563394",
+        "type": "movie",
+        "name": "Terror Clássico",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 176,
+          "privacy": "public",
+          "author": "ShieldTVtg",
+          "description": "",
+          "url": "https://trakt.tv/lists/10563394"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.24624565",
+        "type": "movie",
+        "name": "Melhores Comédias de Fantasia",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 118,
+          "privacy": "public",
+          "author": "majeed_pk",
+          "description": "",
+          "url": "https://trakt.tv/lists/24624565"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.1588607",
+        "type": "movie",
+        "name": "Ficção Científica e Fantasia Clássica",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 65,
+          "privacy": "public",
+          "author": "kingkearney",
+          "description": "Netflix Genre",
+          "url": "https://trakt.tv/lists/1588607"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.3572166",
+        "type": "movie",
+        "name": "Fantasia: Espadas e Magia",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 142,
+          "privacy": "public",
+          "author": "RookTheRhymer",
+          "description": "Fantasy films with a medieval setting and style.",
+          "url": "https://trakt.tv/lists/3572166"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.2041885",
+        "type": "movie",
+        "name": "Coleção de Fantasia Sombria",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 162,
+          "privacy": "public",
+          "author": "Oya Kesh",
+          "description": "",
+          "url": "https://trakt.tv/lists/2041885"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.4757107",
+        "type": "movie",
+        "name": "Romance Adolescente",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 105,
+          "privacy": "public",
+          "author": "Movie Pal",
+          "description": "A list of the best teen romance movies, ranked by love-obsessed fans of all ages.\r\n\r\nWant more? Get our app: http://bit.ly/moviepal_android",
+          "url": "https://trakt.tv/lists/4757107"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.25318901",
+        "type": "movie",
+        "name": "Romance em Tempos de Guerra",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 265,
+          "privacy": "public",
+          "author": "majeed_pk",
+          "description": "",
+          "url": "https://trakt.tv/lists/25318901"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.24624570",
+        "type": "movie",
+        "name": "Romance, Fantasia e Comédia",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 552,
+          "privacy": "public",
+          "author": "majeed_pk",
+          "description": "",
+          "url": "https://trakt.tv/lists/24624570"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.11142103",
+        "type": "movie",
+        "name": "Amor Proibido no Cinema",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 192,
+          "privacy": "public",
+          "author": "moses456",
+          "description": "",
+          "url": "https://trakt.tv/lists/11142103"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.22847343",
+        "type": "movie",
+        "name": "Melhores Filmes de Romance do IMDb",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 250,
+          "privacy": "public",
+          "author": "IrishStevo",
+          "description": "IMDb's Top Romance Movies. \n\nMinimum of 25,000 votes, minimum rating of 6.0, maximum of 250 movies.\n\nLast Updated: May 4, 2026",
+          "url": "https://trakt.tv/lists/22847343"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.1522155",
+        "type": "movie",
+        "name": "Estúdios de Animação Pixar",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 20,
+          "privacy": "public",
+          "author": "movistapp",
+          "description": "List of movies released by Pixar Animation Studios",
+          "url": "https://trakt.tv/lists/1522155"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.1580797",
+        "type": "movie",
+        "name": "Animações Dreamworks",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 35,
+          "privacy": "public",
+          "author": "movistapp",
+          "description": "",
+          "url": "https://trakt.tv/lists/1580797"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.23334961",
+        "type": "movie",
+        "name": "Animações Sony Pictures",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 60,
+          "privacy": "public",
+          "author": "Tiff31",
+          "description": "https://fr.wikipedia.org/wiki/Sony_Pictures_Animation#Filmographie\r\n\r\nmaj: 24/11/25",
+          "url": "https://trakt.tv/lists/23334961"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.3899489",
+        "type": "movie",
+        "name": "Pérolas Escondidas da Animação",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "title",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 49,
+          "privacy": "public",
+          "author": "trinisete",
+          "description": "Animated movies that are overlooked and/or underappreciated.",
+          "url": "https://trakt.tv/lists/3899489"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.22847039",
+        "type": "movie",
+        "name": "Melhores Filmes de Animação do IMDb",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 250,
+          "privacy": "public",
+          "author": "IrishStevo",
+          "description": "IMDb's Top Animation Movies. \n\nMinimum of 25,000 votes, minimum rating of 6.0, maximum of 250 movies.\n\nLast Updated: May 4, 2026",
+          "url": "https://trakt.tv/lists/22847039"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.837518",
+        "type": "movie",
+        "name": "Animações Warner Bros",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 17,
+          "privacy": "public",
+          "author": "jugchock",
+          "description": "Warner Brothers Animation feature films. Updated May 2020.",
+          "url": "https://trakt.tv/lists/837518"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.23471533",
+        "type": "movie",
+        "name": "Filmes de Anime Japonês",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 3059,
+          "privacy": "public",
+          "author": "a.homrany@hotmail.com",
+          "description": "List created and maintained by https://listrr.pro\r\n\r\n\r\n\r\nOnly Japanese Anime Movies from 19xx to 20xx (Non Japanese Anime Movies is not included JUST Japanese Anime Movies)",
+          "url": "https://trakt.tv/lists/23471533"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.26321637",
+        "type": "movie",
+        "name": "Animação Adulta da Fox",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 20,
+          "privacy": "public",
+          "author": "norelidd",
+          "description": "Animation Domination (also called AniDom, Fox AD, and AD) is an American animated programming block which has aired in two iterations on the Fox broadcast network, featuring a lineup solely made up of prime-time animation and adult animation carried as a majority of, or the whole of, the network's Sunday evening schedule.\r\nAnimation Domination High-Def (also called Animation Domination HD, Fox ADHD, and ADHD) was a late-night programming block broadcast by Fox. Originally premiering on July 21, 2013 as a spin-off of Animation Domination, the block originally focused on new, original adult animation series—similarly in style to Adult Swim.",
+          "url": "https://trakt.tv/lists/26321637"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.2439187",
+        "type": "all",
+        "name": "Universo Hobbit e Senhor dos Anéis",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 6,
+          "privacy": "public",
+          "author": "cscott1",
+          "description": "",
+          "url": "https://trakt.tv/lists/2439187"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.22517757",
+        "type": "movie",
+        "name": "Coleção Garfield",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 35,
+          "privacy": "public",
+          "author": "Krissykk",
+          "description": "Garfield is a fictional cat and the protagonist of the comic strip created by Jim Davis. The comic strip centers on Garfield, portrayed as a lazy, fat, and cynical orange persian/tabby cat. He is noted for his love of lasagna and sleeping, and his hatred of Mondays, fellow cat Nermal and exercise.\r\nGarfield lives with his slightly eccentric, socially awkward owner Jon Arbuckle and Jon's unintelligent pet dog Odie and enjoys satirically teasing them. Despite this, Garfield cares for Odie and Jon, but cares most for his beloved teddy bear Pooky, which is frequently seen in his arms or close to its owner.\r\nSources:\r\nhttps://garfield.fandom.com/wiki/Garfield_(character)\r\nhttps://www.wikiwand.com/en/Garfield_(character)\r\nhttps://www.themoviedb.org/search/movie?query=garfield",
+          "url": "https://trakt.tv/lists/22517757"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.22403154",
+        "type": "movie",
+        "name": "Coleção Scooby-Doo",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 109,
+          "privacy": "public",
+          "author": "Krissykk",
+          "description": "Scooby-Doo is an American animated franchise comprising many animated television series, movies, books, toys & games; produced from 1969 to the present. \r\nRELATED LINKS if you want to know more:\r\n> Filmography: A complete list of Scooby-Doo movies, shows & specials https://scoobydoo.fandom.com/wiki/Filmography\r\n> Scooby-Doo (series) page: https://hanna-barbera.fandom.com/wiki/Scooby-Doo_(series)\r\n> Scooby-Doo incarnation  https://scoobydoo.fandom.com/wiki/Scooby-Doo\r\n> How to Have A Complete Scooby-Doo Collection: https://scoobysnax1.weebly.com/how-to-have-a-complete-scooby-doo-collection.html\r\n> Actors within the Scooby-Doo universe https://scoobydoo.fandom.com/wiki/Category:Actors_within_the_Scooby-Doo_universe\r\n> Scooby-Doo Wikipedia: https://en.wikipedia.org/wiki/Scooby-Doo\r\n\r\n~ Lego Franchise https://trakt.tv/users/krissykk/lists/lego-franchise?sort=released,asc",
+          "url": "https://trakt.tv/lists/22403154"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.21190773",
+        "type": "series",
+        "name": "Shows e Documentários Musicais",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 135,
+          "privacy": "public",
+          "author": "y0dase",
+          "description": "",
+          "url": "https://trakt.tv/lists/21190773"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "trakt.list.21992099",
+        "type": "movie",
+        "name": "Documentários Musicais",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 96,
+          "privacy": "public",
+          "author": "zetetic23",
+          "description": "Music and related documentaries",
+          "url": "https://trakt.tv/lists/21992099"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.11571354",
+        "type": "series",
+        "name": "Shows e Música ao Vivo",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 52,
+          "privacy": "public",
+          "author": "dwarnes1970",
+          "description": "",
+          "url": "https://trakt.tv/lists/11571354"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "trakt.list.1799417",
+        "type": "movie",
+        "name": "Documentários de Crimes Reais",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "added",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 361,
+          "privacy": "public",
+          "author": "Bagpussthe2nd",
+          "description": "A mixture of Murder, Disappearances, Conspiracies and Cults\r\n\r\n*updated regularly",
+          "url": "https://trakt.tv/lists/1799417"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.6652017",
+        "type": "movie",
+        "name": "Documentários de Attenborough",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 93,
+          "privacy": "public",
+          "author": "Hammers Lists",
+          "description": "",
+          "url": "https://trakt.tv/lists/6652017"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.10235726",
+        "type": "movie",
+        "name": "Rotten Tomatoes: Melhores Documentários",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 98,
+          "privacy": "public",
+          "author": "istoit",
+          "description": "Capturing truth, life, and reality — one movie at a time. The best documentaries allow us to see the world with a fresh set of eyes, from social experiments (Super Size Me) to quirky competitions (The King of Kong) to political exposés (Citizenfour) to the ultimate cat video (Kedi). Now, we take the top movies of the form (each is Certified Fresh from at least 100 critics reviews) for our countdown list of the 100 best-reviewed documentaries ranked by Tomatometer. \r\nLink: https://editorial.rottentomatoes.com/guide/100-best-documentaries/",
+          "url": "https://trakt.tv/lists/10235726"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.6652940",
+        "type": "movie",
+        "name": "Documentários de História",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 130,
+          "privacy": "public",
+          "author": "Hammers Lists",
+          "description": "",
+          "url": "https://trakt.tv/lists/6652940"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.25298201",
+        "type": "movie",
+        "name": "Documentários de Natureza e Vida Selvagem da BBC",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 44,
+          "privacy": "public",
+          "author": "majeed_pk",
+          "description": "",
+          "url": "https://trakt.tv/lists/25298201"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.2565470",
+        "type": "movie",
+        "name": "Documentários sobre Hacking e Programação",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "added",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 20,
+          "privacy": "public",
+          "author": "joejoe31b",
+          "description": "Taken from the suggestion thread over on /r/learnprogramming (https://goo.gl/7IdevW)",
+          "url": "https://trakt.tv/lists/2565470"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.23020633",
+        "type": "movie",
+        "name": "Documentários Espaciais",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "desc",
+        "metadata": {
+          "itemCount": 47,
+          "privacy": "public",
+          "author": "mende666@hotmail.com",
+          "description": "_**Space Documentaries**_\r\n\r\n**All my favorite space documentary to share with all of you guys** \r\n\r\n_For UFO or Alien docos look for my ufo documentary_\r\n_**Link to UFO list:**_\r\nhttps://trakt.tv/lists/22982354\r\n\r\n_**The one stop shop to all things Space & Planets with my personal collection**_\r\n\r\n_Dont forget to Like & Follow me_ \r\n\r\n_**#SpaceDocumentary**_",
+          "url": "https://trakt.tv/lists/23020633"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.19556363",
+        "type": "movie",
+        "name": "Documentários de Guerra",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 75,
+          "privacy": "public",
+          "author": "puravidabarron",
+          "description": "",
+          "url": "https://trakt.tv/lists/19556363"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.2627890",
+        "type": "movie",
+        "name": "Os Melhores Filmes Musicais (AFI)",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 25,
+          "privacy": "public",
+          "author": "yoursvivek",
+          "description": "*AFI's 25 Greatest Movie Musicals of All Time*\r\n\r\n",
+          "url": "https://trakt.tv/lists/2627890"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.22458618",
+        "type": "movie",
+        "name": "Musicais de Palco ao Vivo",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 84,
+          "privacy": "public",
+          "author": "holy.moly",
+          "description": "",
+          "url": "https://trakt.tv/lists/22458618"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.6749473",
+        "type": "movie",
+        "name": "Melhores Filmes de Faroeste",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 55,
+          "privacy": "public",
+          "author": "bigbry2k3",
+          "description": "",
+          "url": "https://trakt.tv/lists/6749473"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.30548156",
+        "type": "movie",
+        "name": "Melhores Faroestes",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 199,
+          "privacy": "public",
+          "author": "tvgeniekodi",
+          "description": "This list is maintained by mdblist.com\r\nCreate your own: https://mdblist.com/lists/tvgeniekodi/top-westerns\r\nUpdated at 2026-05-08 00:04:48",
+          "url": "https://trakt.tv/lists/30548156"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.25991365",
+        "type": "series",
+        "name": "Melhores Séries de Máfia e Gângsteres",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 86,
+          "privacy": "public",
+          "author": "moses456",
+          "description": "",
+          "url": "https://trakt.tv/lists/25991365"
+        },
+        "displayType": "series"
+      },
+      {
+        "id": "trakt.list.1544267",
+        "type": "movie",
+        "name": "Filmes de Gueto!",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 204,
+          "privacy": "public",
+          "author": "states37",
+          "description": "",
+          "url": "https://trakt.tv/lists/1544267"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.21874225",
+        "type": "movie",
+        "name": "100 Filmes Mais Significativos Espiritualmente",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "rank",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 101,
+          "privacy": "public",
+          "author": "majeed_pk",
+          "description": "The Arts & Faith's Top 100 Films (previously known as the 100 most spiritually significant films) list has been selected by the Arts & Faith members, which is dedicated to the combination of art and faith.\r\n\r\n2020 update added a new restriction of one film per director, but other films that would have made the list without that restriction can be seen in the subtitle for each main entry in the source.\r\n\r\nSource: http://artsandfaith.com/index.php?/films/year/8-2020-top-100/",
+          "url": "https://trakt.tv/lists/21874225"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "trakt.list.4447993",
+        "type": "movie",
+        "name": "101 Filmes de Gângster Para Ver Antes de Morrer",
+        "enabled": true,
+        "showInHome": false,
+        "source": "trakt",
+        "sort": "released",
+        "sortDirection": "asc",
+        "metadata": {
+          "itemCount": 102,
+          "privacy": "public",
+          "author": "kczempinski",
+          "description": "",
+          "url": "https://trakt.tv/lists/4447993"
+        },
+        "displayType": "movie"
+      },
+      {
+        "id": "letterboxd.hYV5c",
+        "type": "movie",
+        "name": "Coleção Velozes e Furiosos",
+        "enabled": true,
+        "showInHome": false,
+        "source": "letterboxd",
+        "cacheTTL": 86400,
+        "enableRatingPosters": true,
+        "metadata": {
+          "itemCount": 12,
+          "isWatchlist": false,
+          "identifier": "hYV5c",
+          "url": "https://letterboxd.com/sandyk0426/list/fast-furious/"
+        },
+        "displayType": "movie"
+      }
+    ],
+    "search": {
+      "enabled": true,
+      "ai_enabled": true,
+      "ai_provider": "gemini",
+      "ai_model": "gemini-2.5-flash-lite",
+      "providers": {
+        "movie": "tmdb.search",
+        "series": "tvdb.search",
+        "anime_movie": "mal.search.movie",
+        "anime_series": "mal.search.series",
+        "people_search_movie": "tmdb.people.search",
+        "people_search_series": "tmdb.people.search"
+      },
+      "engineEnabled": {
+        "tmdb.search": true,
+        "tvdb.search": true,
+        "tvdb.collections.search": false,
+        "tvmaze.search": true,
+        "trakt.search": true,
+        "mdblist.search": true,
+        "people_search_movie": true,
+        "people_search_series": true,
+        "mal.search.movie": false,
+        "mal.search.series": false,
+        "gemini.search": true
+      },
+      "searchNames": {},
+      "searchOrder": [
+        "movie",
+        "series",
+        "tvdb.collections.search",
+        "gemini.search",
+        "anime_series",
+        "anime_movie",
+        "people_search_movie",
+        "people_search_series"
+      ]
+    },
+    "streaming": [
+      "atp",
+      "dnp",
+      "pmp",
+      "pcp",
+      "dpe",
+      "sst",
+      "hlu",
+      "cru",
+      "mub"
+    ],
+    "customPosterUrlPattern": "https://btttr.cc/poster/imdb/poster-default/{imdb_id}.jpg?lang=pt-BR",
+    "customBackgroundUrlPattern": "",
+    "customLogoUrlPattern": "",
+    "lastModified": 1778365660209,
+    "configVersion": 1778365660210,
+    "configHash": "eca8d2001983080b",
+    "exclusionGenres": ""
+  },
+  "metadata": {
+    "apiKeysExcluded": true,
+    "totalCatalogs": 257,
+    "enabledCatalogs": 245
+  }
+}
